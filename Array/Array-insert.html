@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Element In Array</title>
+    <script>
+        // let arr = [1,2,3,4,6,7,8,9];
+        // let newEle = 5;
+        // let position=4;
+        // console.log(arr);
+        // for(let i=arr.length-1; i>=0; i--){
+        //     if(i>=position){
+        //         arr[i+1]=arr[i];
+        //         if(i==position){
+        //             arr[i]=newEle;
+        //         }
+        //     }
+            
+        // }
+        // console.log(arr);
+
+        
+        // Insert the element by using dynamic way
+        // function inserNewEle(){
+        //     let data=[12,3,4,3,90,87];
+        //     let newEle = document.getElementById('newEle').value;
+        //     newEle = parseInt(newEle);
+        //     let position = document.getElementById('position').value;
+        //     for(let i=data.length-1; i>=0; i--){
+        //         if(i>=position){
+        //             data[i+1]=data[i];
+        //             if(i==position){
+        //                 data[i]= newEle;
+        //             }
+        //         }
+        //     }
+        //     console.log(data);
+        // }
+
+        // insert the element by using splice method
+        let data = [1,2,3,4,6,9];
+        console.log(data);
+        data.splice(2,0,100);
+        console.log(data);
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="position" id="position" />
+    <input type="text" id="newEle" placeholder="new Element" />
+    <button onclick="inserNewEle()">Insert</button>
+</body>
+</html>
