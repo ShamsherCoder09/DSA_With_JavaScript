@@ -1,15 +1,20 @@
 
-function twoSumAdd(nums, target){
-    const myObject ={};
+
+function twoSum(nums, target){
+    const numObj={};
     for(let i=0; i<nums.length; i++){
         const num = nums[i];
-        const complement = target - num;
-        if(myObject.hasOwnProperty(complement)){
-            return [myObject[complement],i];
+        const compliment = target-num;
+        if(numObj.hasOwnProperty(compliment)){
+            return [numObj[compliment],i];
         }
-        myObject[num] = i;
+        numObj[num] = i;
+
     }
     return [];
 }
 
-console.log(twoSumAdd([4,5,10],9));
+console.log(twoSum([4,5,10],9));
+
+//  const ans = twoSum([4,5,10],9)
+//  console.log(ans);
